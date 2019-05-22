@@ -1,6 +1,8 @@
 <template>
   <div class="header">
-    <img src="../assets/cnodejs_light.svg" alt>
+    <router-link :to="{name:'root'}">
+      <img src="../assets/cnodejs_light.svg" alt>
+    </router-link>
     <ul>
       <li>
         <a href="#">首页</a>
@@ -42,7 +44,7 @@ li {
   display: inline-block;
   padding: 10px 15px;
 }
-a{
+a {
   text-decoration: none;
   color: #ccc;
   font-size: 14px;
